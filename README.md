@@ -21,7 +21,9 @@
 > Здесь будет твой лучший скриншот! Положи его в папку `screenshots/` и укажи путь ниже.
 
 <p align="center">
-  <img src="screenshots/terminal.png" width="90%" alt="My Desktop Setup">
+  <img src="screenshots/terminal.png" width="90%" alt="terminal-kitty">
+  <img src="screenshots/nvim.png" width="90%" alt="NeoVim">
+  <img src="screenshots/waybar.png" width="90%" alt="Waybar">
 </p>
 
 ---
