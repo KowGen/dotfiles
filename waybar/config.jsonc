@@ -1,0 +1,54 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 26, 
+    "margin-top": 0,
+    "margin-left": 0,
+    "margin-right": 0,
+    "spacing": 2,
+
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
+    "modules-center": ["mpris"],
+    "modules-right": ["cpu", "memory", "pulseaudio", "battery", "network", "clock", "custom/power", "tray"],
+
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "on-click": "activate"
+    },
+
+    "mpris": {
+        "format": "󰎆 {artist} - {title}",
+        "max-length": 30
+    },
+
+    "cpu": { "format": " {usage}%" },
+    "memory": { "format": " {}%" },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "󰝟",
+        "format-icons": { "default": ["", "", ""] },
+        "on-click": "pavucontrol"
+    },
+
+   "network": {
+    "format-wifi": " {essid}",
+    "format-ethernet": "󰈀",
+    "format-disconnected": "󰤮",
+    "tooltip-format": "{ifname} via {gwaddr}",
+    "on-click": "networkmanager_dmenu"
+},
+    "battery": {
+        "format": "{icon} {capacity}%",
+        "format-icons": ["󰂎", "󰁺", "󰁹"]
+    },
+
+    "clock": {
+        "format": " {:%H:%M}"
+    },
+
+    "custom/power": {
+        "format": "⏻",
+        "on-click": "wlogout"
+    }
+}
