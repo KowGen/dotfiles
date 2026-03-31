@@ -1,0 +1,56 @@
+/* Подключаем цвета от Pywal */
+@import "../../.cache/wal/colors-waybar.css";
+
+* {
+    font-family: "JetBrainsMono Nerd Font", sans-serif;
+    font-size: 13px;
+    border: none;
+    border-radius: 0;
+}
+
+window#waybar {
+    /* Фон всей панели (очень прозрачный) */
+    background-color: rgba(0, 0, 0, 0.2); 
+}
+
+/* Общий стиль для всех "островков" */
+#workspaces, #mpris, #cpu, #memory, #backlight, #pulseaudio, #battery, #network, #clock, #idle_inhibitor, #custom-power, #tray {
+    background-color: rgba(0, 0, 0, 0.5); /* Темная подложка для читаемости */
+    color: @foreground;
+    padding: 0px 8px;
+    margin: 3px 2px; /* Маленькие отступы делают панель тоньше */
+    border-radius: 4px;
+}
+
+/* Акцент на воркспейсах */
+#workspaces button {
+    color: @color7;
+    padding: 0 4px;
+}
+
+#workspaces button.active {
+    color: @color4;
+    border-bottom: 2px solid @color4;
+}
+
+/* Выделяем музыку цветом из обоев */
+#mpris {
+    background-color: @color2;
+    color: #000000;
+}
+
+/* Часы и питание (тоже акцентные) */
+#clock {
+    background-color: @color5;
+    color: #000000;
+}
+
+#custom-power {
+    background-color: @color1;
+    color: #000000;
+}
+
+/* Убираем фон у трея, чтобы не выбивался */
+#tray {
+    background-color: transparent;
+}
